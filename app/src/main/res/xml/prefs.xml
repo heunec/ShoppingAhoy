@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="User info" >
+    <EditTextPreference
+        android:key="email"
+        android:summary="Your email address"
+        android:title="Email" />
+
+        <EditTextPreference
+            android:key="age"
+            android:summary="Enter your age"
+            android:title="Age" />
+
+    <ListPreference
+        android:entries="@array/gender_type"
+        android:entryValues="@array/gender_values"
+        android:key="gender"
+        android:summary="Select your gender"
+        android:title="User gender" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Background Color Settiongs" >
+        <ListPreference
+            android:defaultValue="#111111"
+            android:entries="@array/colorName"
+            android:entryValues="@array/colorCode"
+            android:key="background_color"
+            android:summary="Set background color of app"
+            android:title="Colors" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
